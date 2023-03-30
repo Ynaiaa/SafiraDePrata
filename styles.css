@@ -68,12 +68,18 @@ p{
 div.esquerdo{
     margin-left: 500px;
 }
+html{
+    scroll-behavior: smooth;
+}
 div.menu{
     background-color: #695c5c;
     font-family: var(--text-principal);
     font-size: 1.2rem;
     background:var(--text-cor2);
     padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
 }
 
 div.menu a{
@@ -148,4 +154,50 @@ span {
 .botao:hover{
     color: #000;
     padding: 2rem 3.5rem;
+}
+section{
+    margin-top: 3rem;
+    color:#000;
+}
+.autora{
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    height: 100%;
+    width: 100%;
+}
+.secao-orcamento{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/assets/imagem/testefundo.jpg');
+    background-size: cover;
+}
+.secao-orcamento form{
+    display: grid;
+    row-gap: 1.5rem;
+    font-size: 2rem;
+    justify-items: start;
+    grid-template-columns: 1fr auto;
+    background-color: #FFF9; 
+    backdrop-filter: blur(2px);
+    border-radius: 10px;
+    padding: 4rem;
+}
+
+.secao-orcamento form h3{
+    background-color: #6a3093;
+    color: var(--text-primary);
+    position: absolute;
+    top: -10%;
+    left: 5%;
+    padding: 1rem 3rem;
+    border-radius: 10px;
+}
+.form_img{
+    left: 5rem;
+    height: 15rem;
+    width: auto;
+    cursor: pointer;
+    margin-right: 3rem;
 }
